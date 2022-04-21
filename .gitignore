@@ -1,0 +1,35 @@
+# Data
+*.log
+
+# OF
+*.app
+*.plist
+Makefile
+config.make
+template/OFReleases/
+
+# MacOS
+*.xcodeproj
+*.xcconfig
+.DS_Store
+
+# Windows
+*/obj/*
+icon.rc
+*.sln
+*.db
+*.opendb
+*.vcx*
+*.config
+*.suo
+.vs
+*.exe
+*.dll
+*.exp
+*.iobj
+*.ipdb
+*.ilk
+*.lib
+*.pdb
+*.ini
+icon.rc
