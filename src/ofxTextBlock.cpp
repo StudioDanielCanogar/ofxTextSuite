@@ -310,7 +310,7 @@ void ofxTextBlock::wrapTextArea(float rWidth, float rHeight){
         bool bScaleAvailable = false;
 
         for (int i=1; i <= maxIterations; i++) {
-            ofLog(OF_LOG_VERBOSE,"Scales %i = %f\n", i, scales[maxIndex]);
+            ofLogVerbose("ofxTextBlock") << "Scales " << i << " = " << scales[maxIndex];
             if (scales[i] != -1) bScaleAvailable = true;
 
             if (scales[i] > scales[maxIndex]) {
@@ -330,7 +330,7 @@ void ofxTextBlock::wrapTextArea(float rWidth, float rHeight){
         wrapTextForceLines(maxIndex);
         scale = persistScale;
 
-        ofLog(OF_LOG_VERBOSE,"Scaling with %i at scale %f...\n", maxIndex, scale);
+        ofLogVerbose("ofxTextBlock") << "Scaling with  " << maxIndex << " at scale " << scale;
     }
 
 
@@ -434,7 +434,7 @@ void ofxTextBlock::_loadWords(){
 
     for(int i=0;i < words.size(); i++)
     {
-        ofLog(OF_LOG_VERBOSE, "Loaded word: %i, %s\n", i, words[i].rawWord.c_str());
+        ofLogVerbose("ofxTextBlock") << "Loaded word: " << i << ", " << words[i].rawWord;
     }
 
 
