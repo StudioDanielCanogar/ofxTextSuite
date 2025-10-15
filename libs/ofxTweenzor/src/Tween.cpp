@@ -7,7 +7,7 @@
  *
  */
 
-#include "Tween.h"
+#include "../include/Tween.h"
 
 //--------------------------------------------------------------
 // pass in ints for delay and duration as number of frames //

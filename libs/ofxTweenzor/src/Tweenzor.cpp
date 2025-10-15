@@ -7,7 +7,7 @@
  *
  */
 
-#include "Tweenzor.h"
+#include "../include/Tweenzor.h"
 
 Tweenzor* Tweenzor::__instance = 0;
 
